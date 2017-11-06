@@ -1,5 +1,4 @@
 #include "Dynamic.hpp"
-#include "Static.hpp"
 
 Informer&
 globalGetter()
