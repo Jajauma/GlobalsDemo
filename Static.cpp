@@ -1,3 +1,7 @@
 #include "Static.hpp"
 
-std::string g_str = "String too long for short string optimization";
+// Absolutely need to include this to initialize std::cerr before Informer does
+// its printing O_o
+#include <iostream>
+
+Informer g_informer;

@@ -1,8 +1,8 @@
 #include "Dynamic.hpp"
 #include "Static.hpp"
 
-std::string&
+Informer&
 globalGetter()
 {
-    return g_str;
+    return g_informer;
 }
