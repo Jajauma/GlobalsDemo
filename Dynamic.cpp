@@ -4,5 +4,5 @@
 std::string&
 globalGetter()
 {
-    return g_str;
+    return g_str();
 }

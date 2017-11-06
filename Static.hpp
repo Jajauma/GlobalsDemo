@@ -3,6 +3,6 @@
 
 #include <string>
 
-extern std::string g_str;
+std::string& g_str();
 
 #endif /* end of the header guard */
