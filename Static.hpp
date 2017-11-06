@@ -3,6 +3,10 @@
 
 #include <string>
 
-extern std::string g_str;
+namespace detail {
+std::string& g_str();
+} /* namespace detail */
+
+static auto& g_str = detail::g_str();
 
 #endif /* end of the header guard */

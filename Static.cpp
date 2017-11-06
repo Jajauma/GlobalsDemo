@@ -1,3 +1,8 @@
 #include "Static.hpp"
 
-std::string g_str = "String too long for short string optimization";
+std::string&
+detail::g_str()
+{
+    static std::string s = "String too long for short string optimization";
+    return s;
+}

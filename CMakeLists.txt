@@ -8,7 +8,7 @@ set_property(TARGET Static PROPERTY POSITION_INDEPENDENT_CODE ON)
 add_library(Dynamic SHARED Dynamic.cpp)
 target_link_libraries(Dynamic PRIVATE Static)
 
-add_executable(Boom Main.cpp)
-target_link_libraries(Boom
+add_executable(Ok Main.cpp)
+target_link_libraries(Ok
     PRIVATE Static
     PRIVATE Dynamic)
